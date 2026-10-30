@@ -2,10 +2,17 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:label="Geo Guide"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        
+        <!-- EZT A KÉT SORT KELL BEILLESZTENI IDE ALULRA: -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
